@@ -4,10 +4,10 @@ let player = 2
 let player1Array = []
 let player2Array = []
 
-const winningArrays = ['012', '345', '678', '036', '147', '258', '048', '246']
+// const winningArrays = ['0','1','2'], '345', '678', '036', '147', '258', '048', '246']
 
 
-// function turn(btn) {
+function turn(btn) {
 
     if(player % 2 === 0){
         document.getElementById(btn).value = 'X'
@@ -25,7 +25,7 @@ const winningArrays = ['012', '345', '678', '036', '147', '258', '048', '246']
 
         checkWinner(player2Array)
     }
-// }
+}
 
 
 function checkWinner(dudeArray) {
